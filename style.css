@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #1a0033, #9b71b9);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #ffd700;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  label {
+    font-size: 0.95rem;
+    color: #ddd;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="number"]::placeholder {
+    color: #888;
+  }
+  
+  input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd700;
+    color: #1a0033;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ffc300;
+  }
+  
+  .result {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+    display: none; /* make it visible dynamically with JS */
+    color: #fff;
+  }
+  
